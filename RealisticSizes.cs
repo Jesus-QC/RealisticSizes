@@ -13,6 +13,9 @@ namespace RealisticSizes
 
         private Handlers.Player player;
 
+        public override string Name { get; } = "RealisticSizes";
+        public override string Author { get; } = "JesusQC";
+
         public override void OnEnabled()
         {
             base.OnEnabled();
