@@ -69,11 +69,7 @@ C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bi
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizes.csproj.CoreCompileInputs.cache
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizes.csproj.CopyComplete
-C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizes.dll
-C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizes.pdb
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bin\Release\Assembly-CSharp-firstpass.dll
-C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bin\Better for RP\RealisticSizes.dll
-C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bin\Better for RP\RealisticSizes.pdb
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bin\Better for RP\0Harmony.dll
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bin\Better for RP\Assembly-CSharp-firstpass.dll
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bin\Better for RP\Assembly-CSharp_publicized.dll
@@ -143,3 +139,7 @@ C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bi
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bin\Better for RP\System.Numerics.Vectors.dll
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bin\Better for RP\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizes.csprojAssemblyReference.cache
+C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bin\Better for RP\RealisticSizesBETTERFORROLEPLAY.dll
+C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bin\Better for RP\RealisticSizesBETTERFORROLEPLAY.pdb
+C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizesBETTERFORROLEPLAY.dll
+C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizesBETTERFORROLEPLAY.pdb
