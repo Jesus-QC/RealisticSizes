@@ -141,5 +141,5 @@ C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bi
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizes.csprojAssemblyReference.cache
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bin\Better for RP\RealisticSizesBETTERFORROLEPLAY.dll
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bin\Better for RP\RealisticSizesBETTERFORROLEPLAY.pdb
-C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizesBETTERFORROLEPLAY.dll
-C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizesBETTERFORROLEPLAY.pdb
+C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizes.dll
+C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizes.pdb
