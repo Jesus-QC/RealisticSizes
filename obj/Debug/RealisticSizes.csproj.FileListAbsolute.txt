@@ -72,4 +72,3 @@ C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\ob
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizes.dll
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizes.pdb
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\bin\Release\Assembly-CSharp-firstpass.dll
-C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\obj\Debug\RealisticSizes.csprojAssemblyReference.cache

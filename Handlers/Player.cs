@@ -58,10 +58,10 @@ namespace RealisticSizes.Handlers
                 double fatScale = RandomNumberBetween(0.8, 1.12);
                 ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
             }
-        }
-        public void OnPlayerDying(DyingEventArgs ev)
-        {
-            ev.Target.Scale = new Vector3(1, 1, 1);
+            if (ev.NewRole == RoleType.Tutorial)
+            {
+                ev.Player.Scale = new Vector3(1, 1, 1);
+            }
         }
     }
 }
