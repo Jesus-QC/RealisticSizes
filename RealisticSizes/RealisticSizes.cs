@@ -8,9 +8,6 @@ namespace RealisticSizes
 {
     public class RealisticSizes : Plugin<Config>
     {
-        private static readonly Lazy<RealisticSizes> LazyInstance = new Lazy<RealisticSizes>(valueFactory: () => new RealisticSizes());
-        public RealisticSizes Instance => LazyInstance.Value;
-
         private Handlers.Player player;
 
         public override string Name { get; } = "RealisticSizes";
