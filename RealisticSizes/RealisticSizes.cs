@@ -15,6 +15,7 @@ namespace RealisticSizes
 
         public override string Name { get; } = "RealisticSizes";
         public override string Author { get; } = "JesusQC";
+        public override string Prefix { get; } = "RealisticSizes";
 
         public override void OnEnabled()
         {
