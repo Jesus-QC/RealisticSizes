@@ -16,43 +16,7 @@ namespace RealisticSizes.Handlers
 
         public void OnChangingRole(ChangingRoleEventArgs ev)
         {
-            if (ev.NewRole == RoleType.ClassD)
-            {
-                double randScale = RandomNumberBetween(0.85, 1.03);
-                double fatScale = RandomNumberBetween(0.8, 1.12);
-                ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
-            }
-            if (ev.NewRole == RoleType.Scientist)
-            {
-                double randScale = RandomNumberBetween(0.85, 1.03);
-                double fatScale = RandomNumberBetween(0.8, 1.12);
-                ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
-            }
-            if (ev.NewRole == RoleType.FacilityGuard)
-            {
-                double randScale = RandomNumberBetween(0.85, 1.03);
-                double fatScale = RandomNumberBetween(0.8, 1.12);
-                ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
-            }
-            if (ev.NewRole == RoleType.NtfCadet)
-            {
-                double randScale = RandomNumberBetween(0.85, 1.03);
-                double fatScale = RandomNumberBetween(0.8, 1.12);
-                ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
-            }
-            if (ev.NewRole == RoleType.NtfLieutenant)
-            {
-                double randScale = RandomNumberBetween(0.85, 1.03);
-                double fatScale = RandomNumberBetween(0.8, 1.12);
-                ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
-            }
-            if (ev.NewRole == RoleType.NtfCommander)
-            {
-                double randScale = RandomNumberBetween(0.85, 1.03);
-                double fatScale = RandomNumberBetween(0.8, 1.12);
-                ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
-            }
-            if (ev.NewRole == RoleType.ChaosInsurgency)
+            if (ev.NewRole == RoleType.ClassD || ev.NewRole == RoleType.Scientist || ev.NewRole == RoleType.FacilityGuard || ev.NewRole == RoleType.NtfCadet || ev.NewRole == RoleType.NtfLieutenant || ev.NewRole == RoleType.NtfCommander || ev.NewRole == RoleType.ChaosInsurgency) // You might be able to use ev.player.team but this will do for now, if you want config size for each team then use a dictonary with the roles as keys
             {
                 double randScale = RandomNumberBetween(0.85, 1.03);
                 double fatScale = RandomNumberBetween(0.8, 1.12);
