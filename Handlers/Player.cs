@@ -19,7 +19,7 @@ namespace RealisticSizes.Handlers
             if (ev.NewRole == RoleType.ClassD)
             {
                 double randScale = RandomNumberBetween(0.9, 1.035);
-                double fatScale = RandomNumberBetween(0.8, 1.12);
+                double fatScale = RandomNumberBetween(0.92, 1.12);
                 ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
             }
             if (ev.NewRole == RoleType.Scientist)
