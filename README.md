@@ -1,2 +1,3 @@
 # RealisticSizes
- A fun exiled plugin that make people have random sizes.
+ A fun exiled plugin that make each human have a random size.
+ Recommended for *roleplay* servers
