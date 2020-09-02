@@ -18,43 +18,43 @@ namespace RealisticSizes.Handlers
         {
             if (ev.NewRole == RoleType.ClassD)
             {
-                double randScale = RandomNumberBetween(0.77, 1.11);
+                double randScale = RandomNumberBetween(0.9, 1.11);
                 double fatScale = RandomNumberBetween(0.8, 1.12);
                 ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
             }
             if (ev.NewRole == RoleType.Scientist)
             {
-                double randScale = RandomNumberBetween(0.77, 1.11);
+                double randScale = RandomNumberBetween(0.9, 1.11);
                 double fatScale = RandomNumberBetween(0.8, 1.12);
                 ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
             }
             if (ev.NewRole == RoleType.FacilityGuard)
             {
-                double randScale = RandomNumberBetween(0.77, 1.11);
+                double randScale = RandomNumberBetween(0.9, 1.11);
                 double fatScale = RandomNumberBetween(0.8, 1.12);
                 ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
             }
             if (ev.NewRole == RoleType.NtfCadet)
             {
-                double randScale = RandomNumberBetween(0.77, 1.11);
+                double randScale = RandomNumberBetween(0.9, 1.11);
                 double fatScale = RandomNumberBetween(0.8, 1.12);
                 ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
             }
             if (ev.NewRole == RoleType.NtfLieutenant)
             {
-                double randScale = RandomNumberBetween(0.77, 1.11);
+                double randScale = RandomNumberBetween(0.9, 1.11);
                 double fatScale = RandomNumberBetween(0.8, 1.12);
                 ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
             }
             if (ev.NewRole == RoleType.NtfCommander)
             {
-                double randScale = RandomNumberBetween(0.77, 1.11);
+                double randScale = RandomNumberBetween(0.9, 1.11);
                 double fatScale = RandomNumberBetween(0.8, 1.12);
                 ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
             }
             if (ev.NewRole == RoleType.ChaosInsurgency)
             {
-                double randScale = RandomNumberBetween(0.77, 1.11);
+                double randScale = RandomNumberBetween(0.9, 1.11);
                 double fatScale = RandomNumberBetween(0.8, 1.12);
                 ev.Player.Scale = new Vector3((float)fatScale, (float)randScale, (float)randScale);
             }
