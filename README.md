@@ -17,11 +17,15 @@ RealisticSizes:
   # Manually set sizes for all humans?
   manual_sizes: false
   # Maximun height and depth size (Not recommended more than 1.03 if you want to pass trought all doors)
+  # Requieres manual_sizes: true
   max_height: 1.02999997
   # Minimun height and depth size (Recomended 0.9 for RP servers)
+  # Requieres manual_sizes: true
   min_height: 0.850000024
   # Maximun width size (Not recommended more than 1.12 if you want to pass trought all doors)
+  # Requieres manual_sizes: true
   max_width: 1.12
   # Minimun width size (Recommended 0.9 for RP servers
+  # Requieres manual_sizes: true
   min_width: 0.800000012
 ```
