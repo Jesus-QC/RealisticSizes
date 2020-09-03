@@ -149,7 +149,6 @@ C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\Re
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\RealisticSizes\bin\Release\System.Buffers.dll
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\RealisticSizes\bin\Release\System.Numerics.Vectors.dll
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\RealisticSizes\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\RealisticSizes\obj\Debug\RealisticSizes.csprojAssemblyReference.cache
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\RealisticSizes\obj\Debug\RealisticSizes.csproj.CoreCompileInputs.cache
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\RealisticSizes\obj\Debug\RealisticSizes.csproj.CopyComplete
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\RealisticSizes\bin\Better for RP\RealisticSizesBetterForRP.dll
@@ -212,3 +211,4 @@ C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\Re
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\RealisticSizes\bin\Better for RP\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\RealisticSizes\obj\Debug\RealisticSizes.dll
 C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\RealisticSizes\obj\Debug\RealisticSizes.pdb
+C:\Users\jesus\Documents\Plugins-EXILED\RealisticSizes-EXILED2\RealisticSizes\RealisticSizes\obj\Debug\RealisticSizes.csprojAssemblyReference.cache

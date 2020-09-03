@@ -82,7 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
-    <Compile Include="Handlers\Player.cs" />
+    <Compile Include="EventHandlers.cs" />
     <Compile Include="RealisticSizes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

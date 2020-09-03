@@ -1,14 +1,11 @@
-﻿using Exiled.API.Enums;
-using Exiled.API.Features;
-using System;
-
-using Player = Exiled.Events.Handlers.Player;
+﻿using Exiled.API.Features;
+using RealisticSizes.Handlers;
 
 namespace RealisticSizes
 {
     public class RealisticSizes : Plugin<Config>
     {
-        private Handlers.Player player;
+        private EventHandlers EventHandlers;
 
         public override string Name { get; } = "RealisticSizes";
         public override string Author { get; } = "JesusQC";
@@ -30,16 +27,16 @@ namespace RealisticSizes
 
         public void RegisterEvents()
         {
-            player = new Handlers.Player();
+            EventHandlers = new EventHandlers(this);
 
-            Player.ChangingRole += player.OnChangingRole;
+            Exiled.Events.Handlers.Player.ChangingRole += EventHandlers.OnChangingRole;
         }
 
         public void UnregisterEvents()
         {
-            Player.ChangingRole -= player.OnChangingRole;
+            Exiled.Events.Handlers.Player.ChangingRole -= EventHandlers.OnChangingRole;
 
-            player = null;
+            EventHandlers = null;
         }
     }
 }
