@@ -1,5 +1,6 @@
 # RealisticSizes
-[![JesusQCLovesU](https://forthebadge.com/images/badges/uses-html.svg)](https://github.com/JesusQCHub/RealisticSizes/releases/latest)
+[![JesusQCLovesU](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/JesusQCHub/RealisticSizes/releases/latest) [![JesusQCLovesU](https://forthebadge.com/images/badges/it-works-why.svg)](https://github.com/JesusQCHub/RealisticSizes/releases/latest) [![JesusQCLovesU](https://forthebadge.com/images/badges/made-with-c-sharp.svg)](https://github.com/JesusQCHub/RealisticSizes/releases/latest) [![JesusQCLovesU](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/JesusQCHub/RealisticSizes/releases/latest)
+
  A fun exiled plugin that make each human have a random size.
  Recommended for *roleplay* servers
 
