@@ -25,8 +25,7 @@ namespace RealisticSizes.Handlers
 
         public void OnChangingRole(ChangingRoleEventArgs ev)
         {
-            if (ev.Player == null) return;
-            else
+            if (ev.Player != null)
             {
                 if (plugin.Config.FunMode)
                 {
