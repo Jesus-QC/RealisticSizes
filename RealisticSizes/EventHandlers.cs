@@ -41,7 +41,7 @@ namespace RealisticSizes.Handlers
                 {
                     case RoleType.Spectator:
                     case RoleType.Tutorial:
-                        SetPlayerScale(ev.Player.GameObject, 1, 1, 1);
+                        ev.Player.Scale = new Vector3(1, 1, 1);
                         return;
                     case RoleType.ClassD:
                         if (plugin.Config.ManualSizes)
@@ -142,38 +142,7 @@ namespace RealisticSizes.Handlers
                         }
                         return;
                 }
-                SetPlayerScale(ev.Player.GameObject, fatScale, randScale, randScale);
-            }
-        }
-
-        public static void SetPlayerScale(GameObject target, float x, float y, float z)
-        {
-            try
-            {
-
-                NetworkIdentity identity = target.GetComponent<NetworkIdentity>();
-                target.transform.localScale = new Vector3(1 * x, 1 * y, 1 * z);
-
-                ObjectDestroyMessage destroyMessage = new ObjectDestroyMessage
-                {
-                    netId = identity.netId
-                };
-
-                foreach (GameObject player in PlayerManager.players)
-                {
-                    if (player == target)
-                        continue;
-
-                    NetworkConnection playerCon = player.GetComponent<NetworkIdentity>().connectionToClient;
-                    playerCon.Send(destroyMessage, 0);
-
-                    object[] parameters = new object[] { identity, playerCon };
-                    typeof(NetworkServer).InvokeStaticMethod("SendSpawnMessage", parameters);
-                }
-            }
-            catch (Exception e)
-            {
-                Log.Info($"RealisticSizes error in setting the scale of a player: {e}");
+                ev.Player.Scale = new Vector3(fatScale, randScale, randScale);
             }
         }
     }
