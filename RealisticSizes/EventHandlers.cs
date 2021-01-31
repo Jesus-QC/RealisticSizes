@@ -1,6 +1,7 @@
 ﻿using Exiled.API.Extensions;
 using Exiled.API.Features;
 using Exiled.Events.EventArgs;
+using MEC;
 using Mirror;
 using System;
 using UnityEngine;
@@ -41,7 +42,7 @@ namespace RealisticSizes.Handlers
                 {
                     case RoleType.Spectator:
                     case RoleType.Tutorial:
-                        ev.Player.Scale = new Vector3(1, 1, 1);
+                        Timing.CallDelayed(0.4f, () => { ev.Player.Scale = new Vector3(1, 1, 1); });
                         return;
                     case RoleType.ClassD:
                         if (plugin.Config.ManualSizes)
@@ -142,7 +143,7 @@ namespace RealisticSizes.Handlers
                         }
                         return;
                 }
-                ev.Player.Scale = new Vector3(fatScale, randScale, randScale);
+                Timing.CallDelayed(0.4f, () => { ev.Player.Scale = new Vector3(fatScale, randScale, randScale); });
             }
         }
     }
