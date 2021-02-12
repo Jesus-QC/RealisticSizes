@@ -39,7 +39,6 @@ namespace RealisticSizes.Handlers
                     }
                     switch (ev.NewRole)
                     {
-                        case RoleType.Spectator:
                         case RoleType.Tutorial:
                             ev.Player.Scale = new Vector3(1, 1, 1);
                             SpawnPlayer(ev.Player, randScale, fatScale);
