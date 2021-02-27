@@ -16,20 +16,18 @@ namespace RealisticSizes
 
         public override void OnEnabled()
         {
-            base.OnEnabled();
-
             EventHandlers = new EventHandlers(this);
 
             Exiled.Events.Handlers.Player.ChangingRole += EventHandlers.OnChangingRole;
+            base.OnEnabled();
         }
 
         public override void OnDisabled()
         {
-            base.OnDisabled();
-
             Exiled.Events.Handlers.Player.ChangingRole -= EventHandlers.OnChangingRole;
 
             EventHandlers = null;
+            base.OnDisabled();
         }
     }
 }
