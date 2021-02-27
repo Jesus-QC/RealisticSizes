@@ -12,7 +12,7 @@ namespace RealisticSizes
         public override string Author { get; } = "JesusQC with <3";
         public override string Prefix { get; } = "RealisticSizes";
         public override Version RequiredExiledVersion { get; } = new Version(2, 1, 33);
-        public override Version Version { get; } = new Version(3, 2, 1);
+        public override Version Version { get; } = new Version(3, 3, 0);
 
         public override void OnEnabled()
         {
