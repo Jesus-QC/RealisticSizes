@@ -18,12 +18,6 @@ namespace RealisticSizes.Handlers
         float randScale;
         float fatScale;
 
-        private static float RandomFloatBetween(float minValue, float maxValue)
-        {
-            var next = random.Next();
-            return minValue + (next * (maxValue - minValue));
-        }
-
         public void OnChangingRole(ChangingRoleEventArgs ev)
         {
             if (ev.Player != null)
@@ -32,22 +26,21 @@ namespace RealisticSizes.Handlers
                 {
                     try
                     {
-                        if (plugin.Config.FunMode)
+                        if (plugin.Config.ActiveMode == Config.Mode.Fun)
                         {
-                            randScale = RandomFloatBetween(0.5f, 1.15f);
-                            fatScale = RandomFloatBetween(0.5f, 1.15f);
+                            randScale = UnityEngine.Random.Range(0.5f, 1.15f);
+                            fatScale = UnityEngine.Random.Range(0.5f, 1.15f);
                         }
-                        else if (!plugin.Config.FunMode)
+                        else if (plugin.Config.ActiveMode == Config.Mode.Roleplay)
                         {
-                            randScale = RandomFloatBetween(0.9f, 1.1f);
-                            fatScale = RandomFloatBetween(0.9f, 1.1f);
+                            randScale = UnityEngine.Random.Range(0.9f, 1.1f);
+                            fatScale = UnityEngine.Random.Range(0.9f, 1.1f);
                         }
-
-                        if (plugin.Config.ManualSizes && plugin.Config.a.ContainsKey(ev.NewRole))
+                        else if (plugin.Config.ActiveMode == Config.Mode.Manual && plugin.Config.manualSizes.ContainsKey(ev.NewRole))
                         {
-                            var match = Regex.Match(plugin.Config.a[ev.NewRole], "(.*):(.*)::(.*):(.*)");
-                            randScale = RandomFloatBetween(float.Parse(match.Groups[1].ToString()), float.Parse(match.Groups[3].ToString()));
-                            fatScale = RandomFloatBetween(float.Parse(match.Groups[0].ToString()), float.Parse(match.Groups[2].ToString()));
+                            var match = Regex.Match(plugin.Config.manualSizes[ev.NewRole], "(.*):(.*)::(.*):(.*)");
+                            randScale = UnityEngine.Random.Range(float.Parse(match.Groups[1].ToString()), float.Parse(match.Groups[3].ToString()));
+                            fatScale = UnityEngine.Random.Range(float.Parse(match.Groups[0].ToString()), float.Parse(match.Groups[2].ToString()));
                         }
                         SpawnPlayer(ev.Player, randScale, fatScale);
                     }
@@ -64,7 +57,7 @@ namespace RealisticSizes.Handlers
             try
             {
                 NetworkIdentity identity = ply.GameObject.GetComponent<NetworkIdentity>();
-                ply.GameObject.transform.localScale = new Vector3(1 * Scale1, 1 * Scale2, 1 * Scale2);
+                ply.GameObject.transform.localScale = new Vector3(1 * Scale2, 1 * Scale1, 1 * Scale2);
 
                 ObjectDestroyMessage destroyMessage = new ObjectDestroyMessage();
                 destroyMessage.netId = identity.netId;
