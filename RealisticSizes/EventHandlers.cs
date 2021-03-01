@@ -15,8 +15,6 @@ namespace RealisticSizes.Handlers
         public RealisticSizes plugin;
         public EventHandlers(RealisticSizes plugin) => this.plugin = plugin;
 
-        private static readonly System.Random random = new System.Random();
-
         float randScale;
         float fatScale;
 
