@@ -1,8 +1,10 @@
 ﻿using Exiled.API.Extensions;
 using Exiled.API.Features;
 using Exiled.Events.EventArgs;
+using MEC;
 using Mirror;
 using System;
+using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
@@ -22,7 +24,7 @@ namespace RealisticSizes.Handlers
         {
             if (ev.Player != null)
             {
-                MEC.Timing.CallDelayed(0.4f, () =>
+                Timing.CallDelayed(plugin.Config.IsAntiLagEnabled && Player.List.Count() > plugin.Config.AntiLagMinplayers ? UnityEngine.Random.Range(0.4f, 5f) : 0.4f, () =>
                 {
                     try
                     {
@@ -39,8 +41,12 @@ namespace RealisticSizes.Handlers
                         else if (plugin.Config.ActiveMode == Config.Mode.Manual && plugin.Config.manualSizes.ContainsKey(ev.NewRole))
                         {
                             var match = Regex.Match(plugin.Config.manualSizes[ev.NewRole], "(.*):(.*)::(.*):(.*)");
-                            randScale = UnityEngine.Random.Range(float.Parse(match.Groups[1].ToString()), float.Parse(match.Groups[3].ToString()));
-                            fatScale = UnityEngine.Random.Range(float.Parse(match.Groups[0].ToString()), float.Parse(match.Groups[2].ToString()));
+                            randScale = UnityEngine.Random.Range(float.Parse(match.Groups[2].ToString()), float.Parse(match.Groups[4].ToString()));
+                            fatScale = UnityEngine.Random.Range(float.Parse(match.Groups[1].ToString()), float.Parse(match.Groups[3].ToString()));
+                        }
+                        if (plugin.Config.AllowUnproportionalValues)
+                        {
+                            fatScale = randScale;
                         }
                         SpawnPlayer(ev.Player, randScale, fatScale);
                     }
