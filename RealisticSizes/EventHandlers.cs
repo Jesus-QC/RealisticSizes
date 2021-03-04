@@ -20,6 +20,7 @@ namespace RealisticSizes.Handlers
 
         public void OnChangingRole(ChangingRoleEventArgs ev)
         {
+            if (ev.NewRole == RoleType.None) return;
             if (ev.Player != null)
             {
                 Timing.CallDelayed(plugin.Config.IsAntiLagEnabled && Player.List.Count() > plugin.Config.AntiLagMinplayers ? UnityEngine.Random.Range(0.4f, 5f) : 0.4f, () =>
