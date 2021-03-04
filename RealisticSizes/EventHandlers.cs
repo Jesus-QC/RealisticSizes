@@ -20,7 +20,7 @@ namespace RealisticSizes.Handlers
 
         public void OnChangingRole(ChangingRoleEventArgs ev)
         {
-            if (ev.Player != null)
+            if (ev.Player != null || ev.NewRole != RoleType.None)
             {
                 Timing.CallDelayed(plugin.Config.IsAntiLagEnabled && Player.List.Count() > plugin.Config.AntiLagMinplayers ? UnityEngine.Random.Range(0.4f, 5f) : 0.4f, () =>
                 {
@@ -42,7 +42,7 @@ namespace RealisticSizes.Handlers
                             randScale = UnityEngine.Random.Range(float.Parse(match.Groups[2].ToString()), float.Parse(match.Groups[4].ToString()));
                             fatScale = UnityEngine.Random.Range(float.Parse(match.Groups[1].ToString()), float.Parse(match.Groups[3].ToString()));
                         }
-                        if (plugin.Config.AllowUnproportionalValues)
+                        if (!plugin.Config.AllowUnproportionalValues)
                         {
                             fatScale = randScale;
                         }
